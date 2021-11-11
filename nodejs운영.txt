@@ -1,0 +1,32 @@
+* NodeJS 웹 서버 운영
+1) NodeJS설치
+디렉토리 생성: c:\lab
+
+2)버전 확인
+C:\lab\node -v
+npm -v
+
+3)nodejs express 웹 템플릿 엔진
+-express : 웹 기본 구조를 만드는 엔진
+
+C:\lab\>npm install -g express-generator
+확인: C:\lab\>express -h
+
+4) 홈디렉토리 생성 
+C:\lab>express www_homepage
+- 웹페이지 템플릿 엔진은 ejs, handlebars, mustache 등이 있는데
+  Pug(구 Jade) 사용
+
+express --view=pug  www_homepage
+
+5)초기화
+cd  www_homepage
+C:\lab\www_homepage>npm install
+
+6)홈페이지 시작
+
+SET DEBUG=ether-dapp:* & npm start
+
+7) 접속
+- Desktop 브라우저
+http://192.168.xxx.xxx:3000
